@@ -35,7 +35,7 @@ jobs:
     - name: Build and tag Docker image
       run: |
         docker buildx create --use
-        docker buildx build --file Dockerfile --tag "${DOCKER_HUB_USERNAME}/your-image-name:latest" .
+        docker buildx build --file Dockerfile --tag "${DOCKER_HUB_USERNAME}/discovery-service:latest" .
 
     - name: Push Docker image to Docker Hub
       run: docker push "${DOCKER_HUB_USERNAME}/discovery-service:latest"
