@@ -30,7 +30,7 @@ jobs:
       uses: docker/setup-buildx-action@v1
 
     - name: Login to Docker Hub
-      run: echo "${DOCKER_HUB_PASSWORD}" | docker login -u "${DOCKER_HUB_USERNAME}" --password-stdin
+      run: echo "${DOCKER_HUB_PASSWORD}" | docker login -u "${DOCKER_HUB_USERNAME}" -p "${DOCKER_HUB_PASSWORD}"
 
     - name: Build and tag Docker image
       run: |
