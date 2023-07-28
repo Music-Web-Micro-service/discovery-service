@@ -1,0 +1,12 @@
+
+server:
+  port: 8061
+spring:
+  application:
+    name: discovery-service
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://127.0.0.1:8061/eureka
