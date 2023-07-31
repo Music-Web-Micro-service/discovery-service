@@ -36,4 +36,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/sma1lboy/discovery-service:latest
+          tags: ghcr.io/Music-Web-Micro-service/discovery-service:latest
