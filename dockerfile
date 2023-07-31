@@ -10,4 +10,4 @@ RUN ./mvnw clean package
 EXPOSE 8061
 
 # Command to run your Spring Boot application
-CMD ["java", "-jar", "discovery-service-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "./target/discovery-service-0.0.1-SNAPSHOT.jar"]
